@@ -6,80 +6,143 @@
     <title>Trang Web Của Tôi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f0f2f5;
+            padding: 0;
+            background-color: #f4f7fb;
+            color: #333;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
+            padding: 20px;
         }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+        .nav button {
+            background-color: #1877f2;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .nav button:hover {
+            background-color: #166fe5;
+        }
+
         .form-container {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
         .form-group {
             margin-bottom: 15px;
         }
+
         label {
+            font-weight: 600;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            color: #555;
         }
+
         input {
             width: 100%;
-            padding: 8px;
+            padding: 12px;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-top: 5px;
+            transition: border-color 0.3s ease;
         }
+
+        input:focus {
+            border-color: #1877f2;
+            outline: none;
+        }
+
         button {
+            width: 100%;
+            padding: 14px;
             background-color: #1877f2;
             color: white;
-            padding: 10px 15px;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
         }
+
         button:hover {
             background-color: #166fe5;
         }
-        .nav {
-            margin-bottom: 20px;
-        }
-        .nav button {
-            margin-right: 10px;
-        }
+
         .upload-container {
             text-align: center;
             padding: 40px 0;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         .upload-container h3 {
             margin-bottom: 20px;
             color: #1877f2;
+            font-size: 22px;
+            font-weight: bold;
         }
-        
+
         .upload-group {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
         }
-        
+
         .upload-group input[type="file"] {
-            width: auto;
             padding: 10px;
             background: #f0f2f5;
             border-radius: 8px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            width: auto;
         }
-        
+
         .upload-group button {
             width: 200px;
             padding: 12px 24px;
             font-size: 16px;
+            background-color: #1877f2;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .upload-group button:hover {
+            background-color: #166fe5;
+        }
+
+        .form-container .form-group input {
+            transition: border-color 0.3s ease;
         }
     </style>
 </head>
@@ -158,7 +221,6 @@
         function login() {
             const email = document.getElementById('loginEmail').value;
             const password = document.getElementById('loginPassword').value;
-            // Xử lý đăng nhập ở đây
             console.log('Đăng nhập:', email, password);
         }
 
@@ -166,7 +228,6 @@
             const name = document.getElementById('registerName').value;
             const email = document.getElementById('registerEmail').value;
             const password = document.getElementById('registerPassword').value;
-            // Xử lý đăng ký ở đây
             console.log('Đăng ký:', name, email, password);
         }
 
@@ -177,7 +238,6 @@
                 const formData = new FormData();
                 formData.append('image', file);
                 
-                // Gửi ảnh lên server (cần backend để xử lý)
                 fetch('/upload', {
                     method: 'POST',
                     body: formData
