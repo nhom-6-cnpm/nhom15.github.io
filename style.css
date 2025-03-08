@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Main Styles for Upload Website */
 body {
     font-family: Arial, sans-serif;
@@ -9,6 +10,27 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+=======
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Form styles */
+>>>>>>> e003530 (update index css ,quang)
 .form-container {
     background: white;
     padding: 20px;
@@ -16,19 +38,35 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
 .form-group {
     margin-bottom: 15px;
 }
+=======
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+>>>>>>> e003530 (update index css ,quang)
 label {
     display: block;
     margin-bottom: 5px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e003530 (update index css ,quang)
 input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e003530 (update index css ,quang)
 button {
     background-color: #1877f2;
     color: white;
@@ -37,6 +75,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+<<<<<<< HEAD
 button:hover {
     background-color: #166fe5;
 }
@@ -46,6 +85,22 @@ button:hover {
 .nav button {
     margin-right: 10px;
 }
+=======
+
+button:hover {
+    background-color: #166fe5;
+}
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav button {
+    margin-right: 10px;
+}
+
+/* Upload container styles */
+>>>>>>> e003530 (update index css ,quang)
 .upload-container {
     text-align: center;
     padding: 40px 0;
@@ -75,3 +130,103 @@ button:hover {
     padding: 12px 24px;
     font-size: 16px;
 }
+<<<<<<< HEAD
+=======
+
+/* Header styles */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu button {
+    background: none;
+    border: none;
+    color: #1877f2;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu button:hover {
+    background-color: #f0f2f5;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #ffffff;
+    padding: 40px 0;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h3 {
+    color: #1877f2;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: #65676b;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #1877f2;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #166fe5;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #65676b;
+}
+>>>>>>> e003530 (update index css ,quang)

@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Web Của Tôi</title>
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+>>>>>>> e003530 (update index css ,quang)
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="nav">
-            <button onclick="showHome()">Trang chủ</button>
-            <button onclick="showLogin()">Đăng nhập</button>
-            <button onclick="showRegister()">Đăng ký</button>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">MyWebsite</a>
+            <nav class="nav-menu">
+                <button onclick="showHome()">Trang chủ</button>
+                <button onclick="showLogin()">Đăng nhập</button>
+                <button onclick="showRegister()">Đăng ký</button>
+            </nav>
         </div>
+    </header>
 
+    <div class="container">
         <!-- Trang chủ -->
         <div id="home" class="form-container">
             <h2>Trang chủ</h2>
@@ -58,6 +68,34 @@
             <button onclick="register()">Đăng ký</button>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Về Chúng Tôi</h3>
+                <p>Chúng tôi cung cấp nền tảng chia sẻ và lưu trữ hình ảnh an toàn, tiện lợi cho người dùng.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Hệ</h3>
+                <p>Email: contact@mywebsite.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+                <p>Địa chỉ: Hà Nội, Việt Nam</p>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi Chúng Tôi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MyWebsite. Tất cả các quyền được bảo lưu.</p>
+        </div>
+    </footer>
 
     <script>
         function showHome() {
