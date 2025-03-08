@@ -138,60 +138,60 @@
 
     <script>
       function showHome() {
-          document.getElementById('home').style.display = 'block';
-          document.getElementById('login').style.display = 'none';
-          document.getElementById('register').style.display = 'none';
+        document.getElementById("home").style.display = "block";
+        document.getElementById("login").style.display = "none";
+        document.getElementById("register").style.display = "none";
       }
 
       function showLogin() {
-          document.getElementById('home').style.display = 'none';
-          document.getElementById('login').style.display = 'block';
-          document.getElementById('register').style.display = 'none';
+        document.getElementById("home").style.display = "none";
+        document.getElementById("login").style.display = "block";
+        document.getElementById("register").style.display = "none";
       }
 
       function showRegister() {
-          document.getElementById('home').style.display = 'none';
-          document.getElementById('login').style.display = 'none';
-          document.getElementById('register').style.display = 'block';
+        document.getElementById("home").style.display = "none";
+        document.getElementById("login").style.display = "none";
+        document.getElementById("register").style.display = "block";
       }
 
       function login() {
-          const email = document.getElementById('loginEmail').value;
-          const password = document.getElementById('loginPassword').value;
-          // Xử lý đăng nhập ở đây
-          console.log('Đăng nhập:', email, password);
+        const email = document.getElementById("loginEmail").value;
+        const password = document.getElementById("loginPassword").value;
+        // Xử lý đăng nhập ở đây
+        console.log("Đăng nhập:", email, password);
       }
 
       function register() {
-          const name = document.getElementById('registerName').value;
-          const email = document.getElementById('registerEmail').value;
-          const password = document.getElementById('registerPassword').value;
-          // Xử lý đăng ký ở đây
-          console.log('Đăng ký:', name, email, password);
+        const name = document.getElementById("registerName").value;
+        const email = document.getElementById("registerEmail").value;
+        const password = document.getElementById("registerPassword").value;
+        // Xử lý đăng ký ở đây
+        console.log("Đăng ký:", name, email, password);
       }
 
       function uploadImage() {
-          const fileInput = document.getElementById('imageUpload');
-          const file = fileInput.files[0];
-          if (file) {
-              const formData = new FormData();
-              formData.append('image', file);
+        const fileInput = document.getElementById("imageUpload");
+        const file = fileInput.files[0];
+        if (file) {
+          const formData = new FormData();
+          formData.append("image", file);
 
-              // Gửi ảnh lên server (cần backend để xử lý)
-              fetch('/upload', {
-                  method: 'POST',
-                  body: formData
-              })
-              .then(response => response.json())
-              .then(data => {git init
-                  console.log('Upload thành công:', data);
-              })
-              .catch(error => {
-                  console.error('Lỗi upload:', error);
-              });
-          } else {
-              alert('tao la ai');
-          }
+          // Gửi ảnh lên server (cần backend để xử lý)
+          fetch("/upload", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Upload thành công:", data);
+            })
+            .catch((error) => {
+              console.error("Lỗi upload:", error);
+            });
+        } else {
+          alert("tao la ");
+        }
       }
     </script>
   </body>
