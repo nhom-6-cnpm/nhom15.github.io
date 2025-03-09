@@ -1,258 +1,258 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Web Của Tôi</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9; /* Thay đổi màu nền của trang */
-            color: #444;
-        }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .nav {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-            gap: 30px;
-        }
-        .nav button {
-            background-color: #007BFF;
-            color: white;
-            padding: 14px 25px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-        .nav button:hover {
-            background-color: #0056b3;
-        }
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #444;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 30px;
+      }
+      .nav button {
+        background-color: #007bff;
+        color: white;
+        padding: 14px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+      .nav button:hover {
+        background-color: #0056b3;
+      }
 
-        .form-container {
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
+      .form-container {
+        background: #ffffff;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
 
-        h2 {
-            color: #007BFF;
-            font-size: 28px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
+      h2 {
+        color: #007bff;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
 
-        .form-group {
-            margin-bottom: 20px;
-        }
+      .form-group {
+        margin-bottom: 20px;
+      }
 
-        label {
-            font-weight: 600;
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-        }
+      label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+      }
 
-        input {
-            width: 100%;
-            padding: 14px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-            margin-top: 6px;
-            transition: border-color 0.3s ease;
-        }
+      input {
+        width: 100%;
+        padding: 14px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 6px;
+        transition: border-color 0.3s ease;
+      }
 
-        input:focus {
-            border-color: #007BFF;
-            outline: none;
-        }
+      input:focus {
+        border-color: #007bff;
+        outline: none;
+      }
 
-        button {
-            width: 100%;
-            padding: 16px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
+      button {
+        width: 100%;
+        padding: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
 
-        button:hover {
-            background-color: #0056b3;
-        }
+      button:hover {
+        background-color: #0056b3;
+      }
 
-        .upload-container {
-            text-align: center;
-            padding: 45px 0;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
+      .upload-container {
+        text-align: center;
+        padding: 45px 0;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
 
-        .upload-container h3 {
-            margin-bottom: 25px;
-            color: #007BFF;
-            font-size: 24px;
-            font-weight: bold;
-        }
+      .upload-container h3 {
+        margin-bottom: 25px;
+        color: #007bff;
+        font-size: 24px;
+        font-weight: bold;
+      }
 
-        .upload-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
+      .upload-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
 
-        .upload-group input[type="file"] {
-            padding: 12px;
-            background: #f7f7f7;
-            border-radius: 8px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            width: auto;
-        }
+      .upload-group input[type="file"] {
+        padding: 12px;
+        background: #f7f7f7;
+        border-radius: 8px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        width: auto;
+      }
 
-        .upload-group button {
-            width: 220px;
-            padding: 14px 26px;
-            font-size: 18px;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+      .upload-group button {
+        width: 220px;
+        padding: 14px 26px;
+        font-size: 18px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
 
-        .upload-group button:hover {
-            background-color: #0056b3;
-        }
+      .upload-group button:hover {
+        background-color: #0056b3;
+      }
 
-        .form-container .form-group input {
-            transition: border-color 0.3s ease;
-        }
+      .form-container .form-group input {
+        transition: border-color 0.3s ease;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="nav">
-            <button onclick="showHome()">Trang chủ</button>
-            <button onclick="showLogin()">Đăng nhập</button>
-            <button onclick="showRegister()">Đăng ký</button>
-        </div>
+      <div class="nav">
+        <button onclick="showHome()">Trang chủ</button>
+        <button onclick="showLogin()">Đăng nhập</button>
+        <button onclick="showRegister()">Đăng ký</button>
+      </div>
 
-        <!-- Trang chủ -->
-        <div id="home" class="form-container">
-            <h2>Trang chủ</h2>
-            <div class="upload-container">
-                <h3>Upload ảnh</h3>
-                <div class="upload-group">
-                    <input type="file" id="imageUpload" accept="image/*">
-                    <button onclick="uploadImage()">Upload</button>
-                </div>
-            </div>
+      <!-- Trang chủ -->
+      <div id="home" class="form-container">
+        <h2>Trang chủ</h2>
+        <div class="upload-container">
+          <h3>Upload ảnh</h3>
+          <div class="upload-group">
+            <input type="file" id="imageUpload" accept="image/*" />
+            <button onclick="uploadImage()">Upload</button>
+          </div>
         </div>
+      </div>
 
-        <!-- Form đăng nhập -->
-        <div id="login" class="form-container" style="display: none;">
-            <h2>Đăng nhập</h2>
-            <div class="form-group">
-                <label for="loginEmail">Email:</label>
-                <input type="email" id="loginEmail" required>
-            </div>
-            <div class="form-group">
-                <label for="loginPassword">Mật khẩu:</label>
-                <input type="password" id="loginPassword" required>
-            </div>
-            <button onclick="login()">Đăng nhập</button>
+      <!-- Form đăng nhập -->
+      <div id="login" class="form-container" style="display: none">
+        <h2>Đăng nhập</h2>
+        <div class="form-group">
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" required />
         </div>
+        <div class="form-group">
+          <label for="loginPassword">Mật khẩu:</label>
+          <input type="password" id="loginPassword" required />
+        </div>
+        <button onclick="login()">Đăng nhập</button>
+      </div>
 
-        <!-- Form đăng ký -->
-        <div id="register" class="form-container" style="display: none;">
-            <h2>Đăng ký</h2>
-            <div class="form-group">
-                <label for="registerName">Họ tên:</label>
-                <input type="text" id="registerName" required>
-            </div>
-            <div class="form-group">
-                <label for="registerEmail">Email:</label>
-                <input type="email" id="registerEmail" required>
-            </div>
-            <div class="form-group">
-                <label for="registerPassword">Mật khẩu:</label>
-                <input type="password" id="registerPassword" required>
-            </div>
-            <button onclick="register()">Đăng ký</button>
+      <!-- Form đăng ký -->
+      <div id="register" class="form-container" style="display: none">
+        <h2>Đăng ký</h2>
+        <div class="form-group">
+          <label for="registerName">Họ tên:</label>
+          <input type="text" id="registerName" required />
         </div>
+        <div class="form-group">
+          <label for="registerEmail">Email:</label>
+          <input type="email" id="registerEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="registerPassword">Mật khẩu:</label>
+          <input type="password" id="registerPassword" required />
+        </div>
+        <button onclick="register()">Đăng ký</button>
+      </div>
     </div>
 
     <script>
-        function showHome() {
-            document.getElementById('home').style.display = 'block';
-            document.getElementById('login').style.display = 'none';
-            document.getElementById('register').style.display = 'none';
-        }
+      function showHome() {
+        document.getElementById("home").style.display = "block";
+        document.getElementById("login").style.display = "none";
+        document.getElementById("register").style.display = "none";
+      }
 
-        function showLogin() {
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('login').style.display = 'block';
-            document.getElementById('register').style.display = 'none';
-        }
+      function showLogin() {
+        document.getElementById("home").style.display = "none";
+        document.getElementById("login").style.display = "block";
+        document.getElementById("register").style.display = "none";
+      }
 
-        function showRegister() {
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('login').style.display = 'none';
-            document.getElementById('register').style.display = 'block';
-        }
+      function showRegister() {
+        document.getElementById("home").style.display = "none";
+        document.getElementById("login").style.display = "none";
+        document.getElementById("register").style.display = "block";
+      }
 
-        function login() {
-            const email = document.getElementById('loginEmail').value;
-            const password = document.getElementById('loginPassword').value;
-            console.log('Đăng nhập:', email, password);
-        }
+      function login() {
+        const email = document.getElementById("loginEmail").value;
+        const password = document.getElementById("loginPassword").value;
+        console.log("Đăng nhập:", email, password);
+      }
 
-        function register() {
-            const name = document.getElementById('registerName').value;
-            const email = document.getElementById('registerEmail').value;
-            const password = document.getElementById('registerPassword').value;
-            console.log('Đăng ký:', name, email, password);
-        }
+      function register() {
+        const name = document.getElementById("registerName").value;
+        const email = document.getElementById("registerEmail").value;
+        const password = document.getElementById("registerPassword").value;
+        console.log("Đăng ký:", name, email, password);
+      }
 
-        function uploadImage() {
-            const fileInput = document.getElementById('imageUpload');
-            const file = fileInput.files[0];
-            if (file) {
-                const formData = new FormData();
-                formData.append('image', file);
-                
-                fetch('/upload', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Upload thành công:', data);
-                })
-                .catch(error => {
-                    console.error('Lỗi upload:', error);
-                });
-            } else {
-                alert('Vui lòng chọn ảnh để upload');
-            }
+      function uploadImage() {
+        const fileInput = document.getElementById("imageUpload");
+        const file = fileInput.files[0];
+        if (file) {
+          const formData = new FormData();
+          formData.append("image", file);
+
+          fetch("/upload", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Upload thành công:", data);
+            })
+            .catch((error) => {
+              console.error("Lỗi upload:", error);
+            });
+        } else {
+          alert("Vui lòng chọn ảnh để upload");
         }
+      }
     </script>
-</body>
+  </body>
 </html>
